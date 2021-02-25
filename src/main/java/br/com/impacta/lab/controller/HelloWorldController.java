@@ -20,8 +20,17 @@ public class HelloWorldController {
 		//palavra Hello world concatenada com o nome.
 		//Exmeplo de resposta: Hello world felipe !
 		
+    //string de retorno
+    String retorno = "Hello world " + nome + " !";
+
+      //URL de teste
+      //https://java-spring-atividade-02-jocneto.jocneto.repl.co/atividades/hello?nome=jocneto
+
+    //deu errado :( 
+    //String nome2 = "jocneto";
+    //string concatenada = "Hello world" + " " + nome2 + "!";
 		
-		return ResponseEntity.ok("Hello world !");
+		return ResponseEntity.ok(retorno);
 	}
 	
 }
